@@ -1,4 +1,5 @@
 Projeto API Rest - Solo
+
 Detalhamento do Projeto
 Este projeto foi desenvolvido individualmente por Vittor Gabriel de Oliveira Soares com o objetivo de implementar um CRUD completo (excluindo o método PATCH) para diversas entidades. O projeto inclui a criação de Services, Repositories e Models, todos anotados com @Entity.
 
