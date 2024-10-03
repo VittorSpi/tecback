@@ -1,65 +1,47 @@
-# Pós graduação em desenvolvimento web
-Código base da disciplina de fundamentos de programação web para disciplinas de pós graduação.
-Contém conteúdo básico com fundamentos de programação Java web utilizando REST com Maven, JDK11, JDK 17 , SpringBoot , SpringData
+Projeto API Rest - Solo
+Detalhamento do Projeto
+Este projeto foi desenvolvido individualmente por Vittor Gabriel de Oliveira Soares com o objetivo de implementar um CRUD completo (excluindo o método PATCH) para diversas entidades. O projeto inclui a criação de Services, Repositories e Models, todos anotados com @Entity.
 
-[![License](https://img.shields.io/github/license/rodrigofujioka/tecback.svg)](https://opensource.org/licenses/MIT)
-<img src="https://img.shields.io/github/followers/rodrigofujioka?label=Follow&style=plastic">
-<img src="https://img.shields.io/github/forks/rodrigofujioka/tecback?color=SSSS&label=Fork&style=plastic">
-<a href="https://github.com/rodrigofujioka/tecback/graphs/contributors" alt="Contributors">
-<img src="https://img.shields.io/github/contributors/rodrigofujioka/tecback" /></a>
-<a href="https://github.com/rodrigofujioka/tecback/pulse" alt="Activity">
-<img src="https://img.shields.io/github/commit-activity/m/rodrigofujioka/tecback" /></a>
-
-
-Olá, seja bem vindo a mais um curso com o professor Rodrigo Fujioka.
-
-* Meu instagram: [@rodrigofujioka](https://www.instagram.com/rodrigofujioka)
-* Meu facebook: [@rodrigofujioka](https://www.facebook.com/rodrigofujioka)
-
-
-- [Intellij Idea](https://www.jetbrains.com/idea/)
-- [Spring Tools](https://spring.io/tools)
-- [JDK](https://jdk.java.net/java-se-ri/17)
-
-- ```Outras ferramentas como NetBeans ou VS Code podem ser utilizadas)```
-
-## Cursos recomendados
-
-Cursos recomendados para alunos com dificuldade em assimilar o conteúdo.
-
-#### GIT
-- [GIT para iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/)
-- [GIT - DevMedia](https://www.devmedia.com.br/guia/git-e-github/37585)
-
-#### Java
-- [DevMedia - Java](https://www.devmedia.com.br/guia/programador-java/37809)
-- [Loiane - Java](https://loiane.training/curso/java-basico)
-
-
-## Preparação do ambiente
-
-
-1 - Configurar o ambiente Java, na ordem informada.
-
-1.1 - Baixar e instalar o JDK  ->
-[Oracle JDK](https://www.oracle.com/technetwork/pt/java/javase/downloads/index.html)
-[Open JDK](https://openjdk.java.net/install/index.html)
-
-1.2 - Baixar e extrair binarios do Maven ->
-[Maven](https://maven.apache.org/download.cgi)
-
-1.3 - Configurar Classpath (Java e Maven) ->
-
-1.4 - Baixar e instalar ferramentas de desenvolvimento.
-
-1.4.1 - Aulas ministradas com [Intellij Idea](https://www.jetbrains.com/idea/) Idea ou [Spring Tools](https://spring.io/tools)  .
-
-1.4.2 - Pode ser utilizada qualquer outra ferramenta, no entanto, dúvidas sobre
-utilização apenas sobre as IDE's do itens #1.4.1
-
-1.5 - Criar conta no github
-
-1.5.1 - Realizar fork do meu github [Java básico](https://github.com/rodrigofujioka/tecback) , recomendo me seguir lá.
-
-1.5.2 - Instruções para o projeto são informadas em sala de aula, deve existir outro arquivo .MD com as
-instruções descritivas para sua turma. 
+Contribuições
+1. Filme
+Endpoints:
+GET /filmes: Obtém a lista de todos os filmes.
+POST /filmes: Cria um novo filme.
+PUT /filmes/{id}: Atualiza as informações de um filme existente.
+DELETE /filmes/{id}: Remove um filme pelo ID.
+Implementações:
+FilmeService: Lógica de negócio para operações relacionadas a filmes.
+FilmeRepository: Interação com o banco de dados para a entidade Filme.
+Model Filme: Classe anotada com @Entity representando a tabela de filmes no banco de dados.
+2. Diretor
+Endpoints:
+GET /diretores: Obtém a lista de todos os diretores.
+POST /diretores: Cria um novo diretor.
+PUT /diretores/{id}: Atualiza as informações de um diretor existente.
+DELETE /diretores/{id}: Remove um diretor pelo ID.
+Implementações:
+DiretorService: Lógica de negócio para operações relacionadas a diretores.
+DiretorRepository: Interação com o banco de dados para a entidade Diretor.
+Model Diretor: Classe anotada com @Entity representando a tabela de diretores no banco de dados.
+3. Ator
+Endpoints:
+GET /atores: Obtém a lista de todos os atores.
+POST /atores: Cria um novo ator.
+PUT /atores/{id}: Atualiza as informações de um ator existente.
+DELETE /atores/{id}: Remove um ator pelo ID.
+Implementações:
+AtorService: Lógica de negócio para operações relacionadas a atores.
+AtorRepository: Interação com o banco de dados para a entidade Ator.
+Model Ator: Classe anotada com @Entity representando a tabela de atores no banco de dados.
+4. Gênero
+Endpoints:
+GET /generos: Obtém a lista de todos os gêneros.
+POST /generos: Cria um novo gênero.
+PUT /generos/{id}: Atualiza as informações de um gênero existente.
+DELETE /generos/{id}: Remove um gênero pelo ID.
+Implementações:
+GeneroService: Lógica de negócio para operações relacionadas a gêneros.
+GeneroRepository: Interação com o banco de dados para a entidade Gênero.
+Model Genero: Classe anotada com @Entity representando a tabela de gêneros no banco de dados.
+Conclusão
+Todos os endpoints, serviços e repositórios foram desenvolvidos e testados de maneira independente, garantindo a funcionalidade de um projeto completo de API Rest. Este projeto serve como uma base sólida para qualquer aplicação que necessite de gerenciamento de filmes, diretores, atores e gêneros.
